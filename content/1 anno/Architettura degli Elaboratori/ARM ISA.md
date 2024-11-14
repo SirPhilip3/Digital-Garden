@@ -25,7 +25,7 @@ L'implementazione comporta il caircamento di 2 istruzioni alla volta che vengono
 
 Possibile ottimizzazione del codice se prendiamo in considerazione l'implementazione
 
-![Immagine 2023-04-04 082856.png](../../Resources/Immagine%202023-04-04%20082856.png)
+![Resources/Immagine 2023-04-04 082856.png](../../Resources/Immagine%202023-04-04%20082856.png)
 
 ## Registri in AArch64
 
