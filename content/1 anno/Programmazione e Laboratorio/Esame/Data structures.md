@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esame/Data structures.md","permalink":"/1 anno/Programmazione e Laboratorio/Esame/Data structures/","PassFrontmatter":true}
 ---
 
 ## Singly linked list

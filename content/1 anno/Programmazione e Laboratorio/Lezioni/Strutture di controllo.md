@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Strutture di controllo.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Strutture di controllo/","PassFrontmatter":true}
 ---
 
 

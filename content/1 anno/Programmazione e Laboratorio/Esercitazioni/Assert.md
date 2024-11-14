@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Assert.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Assert/","PassFrontmatter":true}
 ---
 
 `assert()` is a function that takes in input a boolean value (it can be determined by an expression example: `assert( y == 34 )` ) 

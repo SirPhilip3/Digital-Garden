@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/I  O.md","permalink":"/1 anno/Architettura degli Elaboratori/I  O/","PassFrontmatter":true}
 ---
 
 Sistemi di **I/O** usati per collegare il calcolatore a dispositivi esterni

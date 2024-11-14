@@ -1,5 +1,5 @@
 ---
-{"title":"Welcome to My Digital Garden","publish":true,"PassFrontmatter":true}
+{"title":"Welcome to My Digital Garden","publish":true,"path":"index.md","permalink":"/index/","PassFrontmatter":true}
 ---
 
 # CT3 Notes

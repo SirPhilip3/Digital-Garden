@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Gerarchia di memoria.md","permalink":"/1 anno/Architettura degli Elaboratori/Gerarchia di memoria/","PassFrontmatter":true}
 ---
 
 ## Tipologie di memoria

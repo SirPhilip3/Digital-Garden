@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Casting Inplicito.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Casting Inplicito/","PassFrontmatter":true}
 ---
 
 

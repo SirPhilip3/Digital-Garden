@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Tokens.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Tokens/","PassFrontmatter":true}
 ---
 
 Tokens helps deifining how an expression is made ( of what elements )

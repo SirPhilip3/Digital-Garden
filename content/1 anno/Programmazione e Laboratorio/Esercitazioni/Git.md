@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Git.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Git/","PassFrontmatter":true}
 ---
 
 __Git__ is a __VCS__ (Version Control System)

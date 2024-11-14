@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Move semantics.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Move semantics/","PassFrontmatter":true}
 ---
 
 

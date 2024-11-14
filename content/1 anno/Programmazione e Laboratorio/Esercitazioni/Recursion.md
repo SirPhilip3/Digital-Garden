@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Recursion.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Recursion/","PassFrontmatter":true}
 ---
 
 Programming technique in which the function calls itself on a smaller istance of the original problem

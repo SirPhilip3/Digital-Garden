@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/ARM ISA.md","permalink":"/1 anno/Architettura degli Elaboratori/ARM ISA/","PassFrontmatter":true}
 ---
 
 # ARMv8-A ISA

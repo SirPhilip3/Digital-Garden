@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Definizione di costanti.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Definizione di costanti/","PassFrontmatter":true}
 ---
 
 

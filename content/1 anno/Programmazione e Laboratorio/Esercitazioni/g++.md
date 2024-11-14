@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/g++.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/g++/","PassFrontmatter":true}
 ---
 
 __g++__ is the compiler for C++ code (standard C++14)

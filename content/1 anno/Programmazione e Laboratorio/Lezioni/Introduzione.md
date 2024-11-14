@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Introduzione.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Introduzione/","PassFrontmatter":true}
 ---
 
 Programmazione in C++14/11

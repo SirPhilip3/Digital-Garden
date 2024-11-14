@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Virtual Memory.md","permalink":"/1 anno/Architettura degli Elaboratori/Virtual Memory/","PassFrontmatter":true}
 ---
 
 **Memoria virtuale**: La memoria primaria **RAM** agisce come cache per la memoria secondaria **SSD, dischi** 

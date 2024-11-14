@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/STL.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/STL/","PassFrontmatter":true}
 ---
 
 The **Standard Template Library** is a C++ framework consisting of **template-based** classes and algorithms that implements the mostly used data-structures and common tasks

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Passagio delle variabili alle funzioni.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Passagio delle variabili alle funzioni/","PassFrontmatter":true}
 ---
 
 

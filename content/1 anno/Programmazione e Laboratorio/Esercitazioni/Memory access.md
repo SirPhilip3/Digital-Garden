@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Memory access.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Memory access/","PassFrontmatter":true}
 ---
 
 Memory accesses are the main sources of performance degradation

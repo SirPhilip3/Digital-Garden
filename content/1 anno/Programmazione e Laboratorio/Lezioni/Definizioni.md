@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Definizioni.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Definizioni/","PassFrontmatter":true}
 ---
 
 

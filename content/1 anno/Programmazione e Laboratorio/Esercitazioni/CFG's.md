@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/CFG's.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/CFG's/","PassFrontmatter":true}
 ---
 
 # Context free grammar

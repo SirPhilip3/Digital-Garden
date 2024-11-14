@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/MIPS.md","permalink":"/1 anno/Architettura degli Elaboratori/MIPS/","PassFrontmatter":true}
 ---
 
 Datapath a singolo ciclo MIPS: 

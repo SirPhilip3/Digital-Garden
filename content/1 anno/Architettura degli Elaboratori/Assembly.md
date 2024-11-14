@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Assembly.md","permalink":"/1 anno/Architettura degli Elaboratori/Assembly/","PassFrontmatter":true}
 ---
 
 L'unico linguaggio che la CPU può eseguire è il linguaggio macchina

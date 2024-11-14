@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Exeption handling.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Exeption handling/","PassFrontmatter":true}
 ---
 
 `std::cin` can be in an  **error state** :

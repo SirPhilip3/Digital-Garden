@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Streams.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Streams/","PassFrontmatter":true}
 ---
 
 **C++ streams** is a flow of data into or out of a program, more precisly a sequence of bytes that is read or written

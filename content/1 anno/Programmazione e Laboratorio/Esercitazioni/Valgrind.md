@@ -1,5 +1,5 @@
 ---
-{"publish":true,"PassFrontmatter":true}
+{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Valgrind.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Valgrind/","PassFrontmatter":true}
 ---
 
 __Valgrind__ helps finding this type of errors :
