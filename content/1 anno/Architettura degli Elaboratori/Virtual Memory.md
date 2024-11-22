@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Virtual Memory.md","permalink":"/1 anno/Architettura degli Elaboratori/Virtual Memory/","PassFrontmatter":true}
+publish: true
 ---
-
 **Memoria virtuale**: La memoria primaria **RAM** agisce come cache per la memoria secondaria **SSD, dischi** 
 
 Perchè:
@@ -33,7 +32,7 @@ Indirizzi nella pagina fisica:
 
 Traduzione: 
 
-![Immagine 2023-03-31 175130.png](../../Resources/Immagine%202023-03-31%20175130.png)
+![[Immagine 2023-03-31 175130.png]]
 
 Il numero di bit del **page offset** determina le dimensione della pagina Page offset = $log_{2}$ page size
 
@@ -46,7 +45,7 @@ Ad ogni pagina virtuale può corrispondere una qualsiasi pagina fisica: **comple
 
 Aggiunta di un bit di validità per determinare se la **page table** è in memoria
 
-![Immagine 2023-04-01 144834.png](../../Resources/Immagine%202023-04-01%20144834.png)
+![[Immagine 2023-04-01 144834.png]]
 
 Se una pagina non è presente in **RAM** ma solo sul disco si verifica **page fault**:
 + **Miss penalty enorme** : necessario ridurre il più possibile in numero di **page faults** 
@@ -81,7 +80,7 @@ Presenza località spaziale e temporale anche nell'accesso alla **page table**
 
 Può avere vari livelli di associatività 
 
-![Immagine 2023-04-01 161414.png](../../Resources/Immagine%202023-04-01%20161414.png)
+![[Immagine 2023-04-01 161414.png]]
 
 **TLB** contiene solo entry che sono Valid nella **page table** , se una paina viene eliminata dalla memoria fisica anche la entry della **TLB** viene invalidata ( bit **valid** = 0 ) 
 
@@ -208,7 +207,7 @@ Quindi non devo liberare completamente la **TLB** in caso di **context switch**
 
 Diveris sapazi di indirizzamento e page table per gestire macchine virtuali
 
-![Immagine 2023-04-02 173012.png](../../Resources/Immagine%202023-04-02%20173012.png)
+![[Immagine 2023-04-02 173012.png]]
 
 ### Page table multi livello
 
@@ -222,4 +221,4 @@ Così ciascuna delle 4 tabelle è contenuta in una pagina di memoria
 
 **TTRB** è il registro che punta ala tabella a livello 0
 
-![Immagine 2023-04-02 181410.png](../../Resources/Immagine%202023-04-02%20181410.png)
+![[Immagine 2023-04-02 181410.png]]

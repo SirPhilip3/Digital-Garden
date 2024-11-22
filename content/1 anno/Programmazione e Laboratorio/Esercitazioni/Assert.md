@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Assert.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Assert/","PassFrontmatter":true}
+publish: true
 ---
-
 `assert()` is a function that takes in input a boolean value (it can be determined by an expression example: `assert( y == 34 )` ) 
 
 Use assert to check for pre/post conditions of a function

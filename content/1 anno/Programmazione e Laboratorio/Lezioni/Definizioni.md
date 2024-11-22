@@ -1,11 +1,10 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Definizioni.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Definizioni/","PassFrontmatter":true}
+publish: true
 ---
 
+**[[Tipi]] di dato**: Un tipo di dato (o semplicemente tipo) è un insieme di valori sul quale sono definite delle operazioni
 
-**[[1 anno/Programmazione e Laboratorio/Lezioni/Tipi\|Tipi]] di dato**: Un tipo di dato (o semplicemente tipo) è un insieme di valori sul quale sono definite delle operazioni
-
-**Oggetto**: Un oggetto è una regione di memoria alla quale è associato un [[1 anno/Programmazione e Laboratorio/Lezioni/Tipi\|Tipi]]
+**Oggetto**: Un oggetto è una regione di memoria alla quale è associato un [[Tipi]]
 
 **Variabile**: oggetto a cui è assegnato un identificatore
 

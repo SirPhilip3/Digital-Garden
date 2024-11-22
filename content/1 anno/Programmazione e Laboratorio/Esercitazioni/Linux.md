@@ -1,10 +1,9 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Linux.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Linux/","PassFrontmatter":true}
+publish: true
 ---
-
 ## Filesystem
 
-![Immagine 2023-03-04 114650.png](../../../Resources/Immagine%202023-03-04%20114650.png)
+![[Immagine 2023-03-04 114650.png]]
 
 ## Commands
 

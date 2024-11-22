@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Input Output.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Input Output/","PassFrontmatter":true}
+publish: true
 ---
-
 
 Includendo la libreria iostream
 

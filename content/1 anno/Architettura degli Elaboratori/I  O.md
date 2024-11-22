@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/I  O.md","permalink":"/1 anno/Architettura degli Elaboratori/I  O/","PassFrontmatter":true}
+publish: true
 ---
-
 Sistemi di **I/O** usati per collegare il calcolatore a dispositivi esterni
 
 ## Bus
@@ -11,7 +10,7 @@ Collegamento eseguito attraverso un **bus** che implementa un canale di comunica
 
 Example :
 
-![Immagine 2023-05-02 150420.png](../../Resources/Immagine%202023-05-02%20150420.png)
+![[Immagine 2023-05-02 150420.png]]
 
 Vantaggi :
 + _Versatilità_ : facile aggiungere o togliere dispositivi , le periferiche possono essere spostate tra sistemi differenti che usano lo stesso tipo di **bus** 
@@ -47,15 +46,15 @@ Esempi di **bus** :
 
 Old system ( discontinued )
 
-![Immagine 2023-05-02 151852.png](../../Resources/Immagine%202023-05-02%20151852.png)
+![[Immagine 2023-05-02 151852.png]]
 
 **Bus** I/O interfacciati direttamente con il **bus** processore-memoria
 
-![Immagine 2023-05-02 152049.png](../../Resources/Immagine%202023-05-02%20152049.png)
+![[Immagine 2023-05-02 152049.png]]
 
 Sistema moderno che consente di ridurre i conflitti nell'accesso al **bus** in modo gerarchico
 
-![Immagine 2023-05-02 152220.png](../../Resources/Immagine%202023-05-02%20152220.png)
+![[Immagine 2023-05-02 152220.png]]
 
 ### Esempi di **bus** Intel
 
@@ -66,7 +65,7 @@ Sistema moderno che consente di ridurre i conflitti nell'accesso al **bus** in m
 + _Southbridge_ è un chip connesso a _Northbridge_ attraverso un bus proprietario ( Hub-link )
 + _Southbridge_ è responsabile di inerconnettere dispositivi più lenti attraverso il **bus** PCI , LPC ( Low Pin Count ) , USB , SATA
 
-![Immagine 2023-05-02 153249.png](../../Resources/Immagine%202023-05-02%20153249.png)
+![[Immagine 2023-05-02 153249.png]]
 
 #### PC moderni
 
@@ -75,7 +74,7 @@ Sistema moderno che consente di ridurre i conflitti nell'accesso al **bus** in m
 + Le schede grafiche sono direttamente connesse alla CPU tramite PCIe 3.0
 + _Southbridge_ connesso alla CPU trmite un **bus** chiamato **DMI ( Direct Media Interface )** basato sullo standard PCIe  
 
-![Immagine 2023-05-02 153347.png](../../Resources/Immagine%202023-05-02%20153347.png)
+![[Immagine 2023-05-02 153347.png]]
 
 ## BUS Sincrono
 
@@ -102,15 +101,15 @@ Oltre alle linee per il trasferimento di dati bisogna aggiungere 2 segnali per s
 Esempio :
 
 1. All'inizio tutte le linee sono not-asserted ( volts to 0 )
-   ![Immagine 2023-05-04 125100.png](../../Resources/Immagine%202023-05-04%20125100.png)
+   ![[Immagine 2023-05-04 125100.png]]
 2. Il dispositivo A mette l'informazione da trasferire sulla linea dati e imposta **Req** a 1
-   ![Immagine 2023-05-04 130902.png](../../Resources/Immagine%202023-05-04%20130902.png)
+   ![[Immagine 2023-05-04 130902.png]]
 3. Il dispositivo B si accorge che **Req**=1 , legge quindi dalla linea **DATA** l'informazione presente. Quando l'informazione è stata letta imposta **Ack**=1
-   ![Immagine 2023-05-04 130957.png](../../Resources/Immagine%202023-05-04%20130957.png)
+   ![[Immagine 2023-05-04 130957.png]]
 4. Il dispositivo A si accorge che **Ack**=1 e sa quindi che la lettura è terminata , imposta **Req** e **DATA** a 0
-   ![Immagine 2023-05-04 131024.png](../../Resources/Immagine%202023-05-04%20131024.png)
+   ![[Immagine 2023-05-04 131024.png]]
 5. Il dispositivo B si accorge che **Req**=0 e imposta quindi **Ack** a 0
-   ![Immagine 2023-05-04 131044.png](../../Resources/Immagine%202023-05-04%20131044.png)
+   ![[Immagine 2023-05-04 131044.png]]
 
 ## Arbitraggio
 
@@ -124,7 +123,7 @@ I dispositivi che competono per l'uso del **bus** hanno linee aggiuntive che li 
 Esempio :
 
 I richiedenti sono posti in catena in funzione della loro priorità
-![Immagine 2023-05-04 131213.png](../../Resources/Immagine%202023-05-04%20131213.png)
+![[Immagine 2023-05-04 131213.png]]
 
 1. Quando un device deve trasmettere imposta a 1 la linea _request_ . La richiesta arriva all'**arbitro** che però non sa chi l'ha effettuata ( la linea _request_ è condivisa )
 2. L'**arbitro** imposta quindi _grant_ a 1 che viene intercettato dal primo device nella catena 
@@ -158,7 +157,7 @@ In genere un **controller** contiene dei registri tra cui :
 + **Data Write** register : utilizzato per il trasferimento di dati vero il device
 + **Data Read** register : utilizzato per trasferire dati dal device alla memoria
 
-![Immagine 2023-05-04 132825.png](../../Resources/Immagine%202023-05-04%20132825.png)
+![[Immagine 2023-05-04 132825.png]]
 
 #### Comunicare con il controller 
 
@@ -251,5 +250,5 @@ Il trasferimento dati tra dispositivo e memoria avviene grazie ad un controllore
 + Il trasferimento avviene senza l'intervento della CPU
 + Al termine del trasferimento la CPU viene notificata attraverso un interrupt
 
-![Immagine 2023-05-04 143623.png](../../Resources/Immagine%202023-05-04%20143623.png)
+![[Immagine 2023-05-04 143623.png]]
 

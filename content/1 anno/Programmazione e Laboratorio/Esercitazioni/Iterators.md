@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Iterators.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Iterators/","PassFrontmatter":true}
+publish: true
 ---
-
 
 An **iterator** is an object that points to an element inside a container , can be used to read the element and/or modify it
 
@@ -9,7 +8,7 @@ They provide an **interface** to access data inside a container abstractnig the 
 
 Example :
 
-![Immagine 2023-04-27 121418.png](../../../Resources/Immagine%202023-04-27%20121418.png)
+![[Immagine 2023-04-27 121418.png]]
 
 + Two different implementation of a `list<var>` 
 	+ using **singly-linked list**
@@ -18,7 +17,7 @@ Example :
 
 `it` is an iterator
 
-![Immagine 2023-04-27 121723.png](../../../Resources/Immagine%202023-04-27%20121723.png)
+![[Immagine 2023-04-27 121723.png]]
 
 Using **iterators** we can write :
 ```c++
@@ -77,7 +76,7 @@ std::fill(l.begin(), l.edn(), 3.14); // fills from beginning to end l with 3.14
 + **Random access** iterator : same as previous one but can also jump to a middle position ( access not necessarily sequential )
 + **Contiguos** iterator : same as previous one but with the property that logically adjacent elements are also physically adjacent in memory
 
-![Immagine 2023-04-27 125931.png](../../../Resources/Immagine%202023-04-27%20125931.png)
+![[Immagine 2023-04-27 125931.png]]
 
 Each iterator type in category _i_ is also an iterator of type in category _i+1_
 

@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Calculator.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Calculator/","PassFrontmatter":true}
+publish: true
 ---
-
 ## V1
 
 Read three varibles from `std::cin` :
@@ -146,7 +145,7 @@ int main(){
 
 **CFG** for calculator
 
-![Immagine 2023-04-12 132315.png](../../../Resources/Immagine%202023-04-12%20132315.png)
+![[Immagine 2023-04-12 132315.png]]
 
 An expression is a<font color=00b050> summation</font> of <font color=ff323c> products</font> of terms
 A term is either a number or an expression between parentheses

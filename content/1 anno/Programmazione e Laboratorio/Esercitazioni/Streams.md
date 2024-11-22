@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Streams.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Streams/","PassFrontmatter":true}
+publish: true
 ---
-
 **C++ streams** is a flow of data into or out of a program, more precisly a sequence of bytes that is read or written
 
 Example : 
@@ -15,7 +14,7 @@ Example :
 Extracting bytes from an input buffer : `std::cin >> x`
 Push bytes to an output buffer : `std::cout << x`
 
-![Immagine 2023-04-13 121554.png](../../../Resources/Immagine%202023-04-13%20121554.png)
+![[Immagine 2023-04-13 121554.png]]
 
 ## Other streams 
 

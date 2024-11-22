@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Definizione di costanti.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Definizione di costanti/","PassFrontmatter":true}
+publish: true
 ---
-
 
 ```c++
 constexp int a=7

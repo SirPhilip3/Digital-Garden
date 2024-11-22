@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esame/Operator overloading.md","permalink":"/1 anno/Programmazione e Laboratorio/Esame/Operator overloading/","PassFrontmatter":true}
+publish: true
 ---
-
 ### Copy assignment operator
 
 Copy assignement operator deve eliminare gli elementi presenti nella lista da modificare e aggiungere gli elementi della lista da cui copiarli 

@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/STL.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/STL/","PassFrontmatter":true}
+publish: true
 ---
-
 The **Standard Template Library** is a C++ framework consisting of **template-based** classes and algorithms that implements the mostly used data-structures and common tasks
 
 Composed of : 
@@ -20,7 +19,7 @@ Examples :
 
 ## STL model
 
-![Immagine 2023-05-09 112155.png](../../../Resources/Immagine%202023-05-09%20112155.png)
+![[Immagine 2023-05-09 112155.png]]
 
 **Iterators** are used to link data structures ( container ) and algorithms that interacts with the data so that the algorithm dosen't require the knowledge of how a container is implemented ( it works on **iterator** , pointers ) 
 

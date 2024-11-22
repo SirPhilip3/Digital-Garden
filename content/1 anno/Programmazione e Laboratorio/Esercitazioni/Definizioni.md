@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Definizioni.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Definizioni/","PassFrontmatter":true}
+publish: true
 ---
-
 **Tipo di dato**
 Un tipo di dato (o semplicemente tipo) è un insieme di valori sul quale sono definite delle operazioni
 

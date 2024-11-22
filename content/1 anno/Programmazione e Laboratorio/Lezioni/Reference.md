@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Reference.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Reference/","PassFrontmatter":true}
+publish: true
 ---
-
 
 Le **Reference** ci permettono di non utilizzare i puntatori
 ```c++

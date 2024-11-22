@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Debugging.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Debugging/","PassFrontmatter":true}
+publish: true
 ---
-
 ## Errors
 * __Linking-time errors__ : the compiler can't link the dependencies 
 * __Compilation-time errors__ 

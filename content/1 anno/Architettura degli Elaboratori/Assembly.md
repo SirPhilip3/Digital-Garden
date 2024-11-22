@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Assembly.md","permalink":"/1 anno/Architettura degli Elaboratori/Assembly/","PassFrontmatter":true}
+publish: true
 ---
-
 L'unico linguaggio che la CPU può eseguire è il linguaggio macchina
 
 C'è bisogno di tradurre i linguaggi ad alto livello in linguaggio macchina 2 approcci 
@@ -366,7 +365,7 @@ Per gestire le stringhe dobbiamo caricare singoli byte ( per ogni carattere ) pe
 	+ 32 - 126 : caratteri stampabili
 	+ 127 carattere di controllo ( DEL )
 
-![Immagine 2023-04-20 162924.png](../../Resources/Immagine%202023-04-20%20162924.png)
+![[Immagine 2023-04-20 162924.png]]
 
 I caratteri **alfabetici** e **numerici** corrispondono a codici _consecutivi_
 
@@ -389,17 +388,17 @@ sono necessarie altre codifiche.
 
 ##### ISO 8859-1 ( Latin-1 )
 
-![Immagine 2023-04-20 164039.png](../../Resources/Immagine%202023-04-20%20164039.png)
+![[Immagine 2023-04-20 164039.png]]
 
 ##### ISO 8859-15 (Latin-9)
 
-![Immagine 2023-04-20 164124.png](../../Resources/Immagine%202023-04-20%20164124.png)
+![[Immagine 2023-04-20 164124.png]]
 
 Ci sono molte codifiche differenti, in generale non c'è modo di sapere quale applicare ad un qualsiasi testo scritto, se utilizziamo la codifica sbagliata rischiamo di vedere dei simboli differenti
 
 Esempio :  Windows 1252 vs Mac OS Roman
 
-![Immagine 2023-04-20 164433.png](../../Resources/Immagine%202023-04-20%20164433.png)
+![[Immagine 2023-04-20 164433.png]]
 
 ##### UNICODE
 
@@ -420,7 +419,7 @@ La decodifica di un carattere in **UTF-8** :
 + Se un byte inizia con 0 allora quel carattere è rappresentato da un byte
 + Se un byte inizia con 1  allora devo contare quanti 1 si trovano successivamente fino ad uno 0 terminale , il numero di 1 corrisponde al numero di byte con il quale è rappresentato quel carattere
 
-![Immagine 2023-04-20 165405.png](../../Resources/Immagine%202023-04-20%20165405.png)
+![[Immagine 2023-04-20 165405.png]]
 
 ### Procedure e Funzioni
 
@@ -593,5 +592,5 @@ _Prima di chiamare una funzione non dobbiamo salvare nulla se :_
 
 ## Segmenti di memoria di un programma
 
-![Immagine 2023-04-27 143237.png](../../Resources/Immagine%202023-04-27%20143237.png)
+![[Immagine 2023-04-27 143237.png]]
 

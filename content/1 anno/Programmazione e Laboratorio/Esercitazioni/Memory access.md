@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Memory access.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Memory access/","PassFrontmatter":true}
+publish: true
 ---
-
 Memory accesses are the main sources of performance degradation
 
 Memory is faster when close to the CPU 
@@ -10,7 +9,7 @@ __Cache__ is the fastest memory present in the system (exept for the CPU registe
 + __L2__ is an extra chip between the CPU and the RAM (it's size is up to 512KB)
 + __L3__ is the larger of the three but also the slowest (it's size is up to 32 MB shared between variuos cores)
 
-![Immagine 2023-03-04 211525.png](../../../Resources/Immagine%202023-03-04%20211525.png)
+![[Immagine 2023-03-04 211525.png]]
 
 In order to not slow down a program it's better to access always the fastest memory you can.
 

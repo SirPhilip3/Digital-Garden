@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Recursion.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Recursion/","PassFrontmatter":true}
+publish: true
 ---
-
 Programming technique in which the function calls itself on a smaller istance of the original problem
 
 3 ingredients to solve recursive problems :
@@ -32,7 +31,7 @@ int main(){
 
 Step by step execution :
 
-![Immagine 2023-04-09 173018.png](../../../Resources/Immagine%202023-04-09%20173018.png)
+![[Immagine 2023-04-09 173018.png]]
 
 
 Example : _Power_
@@ -86,7 +85,7 @@ uint64_t factorial(const uint64_t n){
 
 Step by step execution :
 
-![Immagine 2023-04-09 180650.png](../../../Resources/Immagine%202023-04-09%20180650.png)
+![[Immagine 2023-04-09 180650.png]]
 
 
 Example : _Binomial coefficents_
@@ -122,7 +121,7 @@ uint64_t fibonacci(const uint64_t n){
 
 Step by step execution : 
 
-![Immagine 2023-04-09 185115.png](../../../Resources/Immagine%202023-04-09%20185115.png)
+![[Immagine 2023-04-09 185115.png]]
 
 
 Example : _Find all words_

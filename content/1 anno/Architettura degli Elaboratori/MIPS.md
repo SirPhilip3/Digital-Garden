@@ -1,10 +1,9 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/MIPS.md","permalink":"/1 anno/Architettura degli Elaboratori/MIPS/","PassFrontmatter":true}
+publish: true
 ---
-
 Datapath a singolo ciclo MIPS: 
 
-![nM8IuyM.png](../../Resources/nM8IuyM.png)
+![[nM8IuyM.png]]
 
 Istruzioni implementate:
 + **[lw](lw.md)** 
@@ -17,7 +16,7 @@ Istruzioni implementate:
 **Clock**: rising edge-triggered
 I valori vengono scritti negli elementi sequenziali al passaggio da un livello basso ad uno alto, ciò ci permette di scrivere e leggere contemporaneamente da uno stesso elemento nello stesso ciclo di clock ( Datapath ottimizzato )
 
-![3-s2.0-B9780128124772000216-gr009.jpg](../../Resources/3-s2.0-B9780128124772000216-gr009.jpg)
+![[3-s2.0-B9780128124772000216-gr009.jpg]]
 
 **Prestazioni** : Le prestazioni della CPU (MIPS) a singolo ciclo sono sono molto basse infatti , per mantenere l'integrità delle informazioni il ciclo di clock deve per forza essere lunga come la più lunga istruzione che il Datapath può eseguire; in questo caso la **lw** ( all'incirca 1000ps ); questo porta ad istruzioni più comuni che potrebbero essere svolte più velocemente a dover "rallentare"
 
@@ -30,7 +29,7 @@ Divisione MIPS in Unità funzionali:
 + Lettura dell'istruzione dall'indirizzo presente nel registro PC
 + Il PC viene incrementato
 
-![Immagine 2023-03-08 174223.png](../../Resources/Immagine%202023-03-08%20174223.png)
+![[Immagine 2023-03-08 174223.png]]
 
 Texe = 200 ps
 
@@ -39,7 +38,7 @@ Texe = 200 ps
 + L'istruzione viene scomposta nelle varie parti e decodificata
 + Lettura dei registri coinvolti nell'istruzione 
 
-![Immagine 2023-03-08 174730.png](../../Resources/Immagine%202023-03-08%20174730.png)
+![[Immagine 2023-03-08 174730.png]]
 
 Texe = 100 ps
 
@@ -50,7 +49,7 @@ Texe = 100 ps
 + Calcolo indirizzi di memoria ( lw/sw )
 + Calcolo indirizzi branch ( beq )
 
-![Immagine 2023-03-08 175130.png](../../Resources/Immagine%202023-03-08%20175130.png)
+![[Immagine 2023-03-08 175130.png]]
 
 Texe = 200 ps
 
@@ -58,7 +57,7 @@ Texe = 200 ps
 
 + Accesso alla memoria dati per leggere e scrivere un valore ( lw/sw )
 
-![Immagine 2023-03-08 175321.png](../../Resources/Immagine%202023-03-08%20175321.png)
+![[Immagine 2023-03-08 175321.png]]
 
 Texe = 200 ps 
 
@@ -66,13 +65,13 @@ Texe = 200 ps
 
 + Scrittura nei registri ( lw )
 
-![Immagine 2023-03-08 175458.png](../../Resources/Immagine%202023-03-08%20175458.png)
+![[Immagine 2023-03-08 175458.png]]
 
 Texe = 100 ps
 
 Per aumentare le prestazioni bisogna fare in modo che le **Unità Funzionali** vengano svolte tutte contemporaneamete ma su istruzioni sucessive ( **Instruction Level Parallelism** ) in questo modo ogni singola istruzione viene svolta nello stesso periodo di tempo rispetto alla CPU a singolo ciclo ma viene aumetato il **throughput**
 
-![Immagine 2023-03-08 184159.png](../../Resources/Immagine%202023-03-08%20184159.png)
+![[Immagine 2023-03-08 184159.png]]
 
 Per fare ciò basta impostare il clock a seconda dello **stadio** più lento ossia: 200 ps, mente nella CPU a singolo ciclo 1 operazione veniva svolta interamente in 1 ciclo di clock, che deve essere impostato secondo l'**istruzione** più lunga ossia una lw o 800 ps anche se altre istruzioni impiegano meno tempo come la Branch ( 500 ps ). 
 Perciò nella CPU a singolo ciclo di fatto completiamo una istruzione ogni 800 ps mentre nella CPU con pipeline un'istruzione viene completata ogni 200 ps
@@ -81,11 +80,11 @@ Esempio:
 
 Singolo ciclo: 2400 ps
 
-![Immagine 2023-03-08 192wee2e.png](../../Resources/Immagine%202023-03-08%20192wee2e.png) 
+![[Immagine 2023-03-08 192wee2e.png]] 
 
 Pipeline: 1400 ps
 
-![Immagine 2023-03-08 200131.png](../../Resources/Immagine%202023-03-08%20200131.png)
+![[Immagine 2023-03-08 200131.png]]
 
 Speedup: $2400/1400=1.7$
 
@@ -149,16 +148,16 @@ Infatti se $T_s=\frac{T_{seq}}{n}$ lo speedup risulta pari a $n$
 
 Ogni stage necessita dei valori calcolati dallo stage precedente, nel precedente ciclo di clock; ci basterà aggiungere dei registri intermedi tra gli stadi 
 
-![Immagine 2023-03-10 181756.png](../../Resources/Immagine%202023-03-10%20181756.png)
+![[Immagine 2023-03-10 181756.png]]
 
 Dobbiamo anche mantenere il PC nei registri intermedi 
 Nella lw necessitiamo di mantenere nei registri anche l'indirizzo Write Register 
 
-![Immagine 2023-03-10 184615.png](../../Resources/Immagine%202023-03-10%20184615.png)
+![[Immagine 2023-03-10 184615.png]]
 
 ## Controllo
 
-![Immagine 2023-03-10 185321.png](../../Resources/Immagine%202023-03-10%20185321.png)
+![[Immagine 2023-03-10 185321.png]]
 
 Nello stadio ID vengono calcolati i segnali di controllo per le istruzioni  sucessive, per questo devono essere propagati attraverso il datapath.
 
@@ -206,7 +205,7 @@ Scrittura di un registro avviene allo stage 5 ( **WB** ) mentre la lettura avvie
 
 Esempio: ( con register file non ottimizato )
 
-![Immagine 2023-03-13 082341.png](../../Resources/Immagine%202023-03-13%20082341.png)
+![[Immagine 2023-03-13 082341.png]]
 
 Lo stadio **ID** propaga 3 **nop** all'intero della pipeline, il controllo delle dipendenze tra registri avviene attraverso l'**Hazard detection unit** che propaga i segnali di controllo per codificare una nop e il **PC** non viene aggiornato in modo tale da ri-eseguire le stesse istruzioni nei cicli sucessivi.
 
@@ -216,7 +215,7 @@ Questo controllo può essere svolto anche dal compilatore aggiungendo delle istr
 
 Il nuovo valore è già disponibile allo stadio **EXE** ( subito dopo essere stato calcolato nel registro intermedio **EX/MEM** )
 
-![Immagine 2023-03-13 123631.png](../../Resources/Immagine%202023-03-13%20123631.png)
+![[Immagine 2023-03-13 123631.png]]
 
 Lo stadio **EXE** della sub preleva il valore salvato nel registro intermedio **EXE/MEM** invece di quello decodificato nello stadio **ID**
 
@@ -224,7 +223,7 @@ Posso anche prendere il valore dallo stadio intermedio **MEM/WB** allo stadio **
 
 Implementazione:
 
-![Immagine 2023-03-13 124348.png](../../Resources/Immagine%202023-03-13%20124348.png)
+![[Immagine 2023-03-13 124348.png]]
 
 Nel caso della **lw** lo stallo è inevitabile poichè producono il valore da memorizzare nel registro target durante lo stadio **MEM** ( necessita almeno una nop )
 
@@ -277,15 +276,15 @@ Soluzioni:
 #### Delayed branch
 anticipiamo il calcolo del **PC** e il confronto dei registri della **beq** 
 Invece di usare l'**ALU** usiamo un circuito specializzato:
-![Immagine 2023-03-13 130814.png](../../Resources/Immagine%202023-03-13%20130814.png)
+![[Immagine 2023-03-13 130814.png]]
 In questo caso il controllo per la branch avviene nello stadio **ID** ciò comporta che solo l'istruzione sucessiva è entrata nella pipeline, in **MIPS** questa istruzione viene sempre eseguita
 Le istruzioni che vengono sempre eseguite dopo una branch viene chaimato **delay slot**, questo aumenta all'aumentare delle dimensioni della pipeline, e può essere riempito con una nop o con delle altre istruzioni  
 
 Questo crea problemi con il **forwarding** in quanto necessito dei valori corretti dei registri da confrontare già nel 2 stadio ( **ID** ), il **forwarding** può solo copiare valori verso **EXE** non **ID** per questo necessitiamo di inserire delle nop 
 
-![Immagine 2023-03-13 133057 1.png](../../Resources/Immagine%202023-03-13%20133057%201.png)
+![[Immagine 2023-03-13 133057 1.png]]
 Il registro $4 sarà disponibile solo al termine di **EXE**, non può essere usato subito dopo nello stadio **ID** della **beq**, per questo dobbiamo inserire una nop
-![Immagine 2023-03-13 133207.png](../../Resources/Immagine%202023-03-13%20133207.png)
+![[Immagine 2023-03-13 133207.png]]
 
 Nel caso della **lw** necessitiamo di 2 nop
 
@@ -305,7 +304,7 @@ Viene utilizzata una **history table** , indicizzata tramite indirizzi delle ist
 
 Se l'indirizzo dell'istruzione è presente nella **history table** allora considero il bit di stato, se taken allora **PC** = indirizzo di branch presente sulla **history table** altrimenti PC=PC+4
 
-![Immagine 2023-03-14 171004.png](../../Resources/Immagine%202023-03-14%20171004.png)
+![[Immagine 2023-03-14 171004.png]]
 
 Caso dei loop innestati
 ```
@@ -328,7 +327,7 @@ Doppio errore nella predizione ( sarebbe più probabile che la beq interna sia s
 
 ###### Predittore con stato a 2-bit
 
-![Immagine 2023-03-14 171622.png](../../Resources/Immagine%202023-03-14%20171622.png)
+![[Immagine 2023-03-14 171622.png]]
 
 Necessita di 2 predizione sbagliate per cambiare stato in not-taken
 
@@ -419,7 +418,7 @@ Pipeline divisa in 4 macro unità:
 6. Commit unit
 	  Scrive i valori calcolati dalle varie operazioni rispettando l'ordine delle dipendenze
 
-![Immagine 2023-03-14 183639.png](../../Resources/Immagine%202023-03-14%20183639.png)
+![[Immagine 2023-03-14 183639.png]]
 
 ### Dipendenze e scheduling dinamico
 

@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Make.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Make/","PassFrontmatter":true}
+publish: true
 ---
-
 ## C++ project directory 
 
 ``` Folders

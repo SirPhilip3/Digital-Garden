@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Tipi.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Tipi/","PassFrontmatter":true}
+publish: true
 ---
-
 
 - Bool
 	 Tipo elementare nuovo, ha come valori True o False (in C True=1 False!=1)   

@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/CFG's.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/CFG's/","PassFrontmatter":true}
+publish: true
 ---
-
 # Context free grammar
 
 A **CFG** is a set of rules explaining how nonterminal symbols are expanded into a composition of other nonterminal symbols and terminal symbols 
@@ -49,11 +48,11 @@ Example :
 
 6<font color=1db100> nodes</font> connected by 5<font color=0d7cbd> edges</font>
 
-![Immagine 2023-04-11 173225.png](../../../Resources/Immagine%202023-04-11%20173225.png)
+![[Immagine 2023-04-11 173225.png]]
 
 We can rapresent a sequence of parenthesis visiting recursevly the tree
 
-![Immagine 2023-04-11 174700.png](../../../Resources/Immagine%202023-04-11%20174700.png)
+![[Immagine 2023-04-11 174700.png]]
 
 ```pseudocode
 visit(u)

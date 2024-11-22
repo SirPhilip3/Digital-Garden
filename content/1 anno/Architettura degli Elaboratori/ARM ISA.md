@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/ARM ISA.md","permalink":"/1 anno/Architettura degli Elaboratori/ARM ISA/","PassFrontmatter":true}
+publish: true
 ---
-
 # ARMv8-A ISA
 
 Supporta 3 istruction set:
@@ -25,7 +24,7 @@ L'implementazione comporta il caircamento di 2 istruzioni alla volta che vengono
 
 Possibile ottimizzazione del codice se prendiamo in considerazione l'implementazione
 
-![Resources/Immagine 2023-04-04 082856.png](../../Resources/Immagine%202023-04-04%20082856.png)
+![[Immagine 2023-04-04 082856.png]]
 
 ## Registri in AArch64
 
@@ -37,7 +36,7 @@ La scelta di **X** o **W** nelle operazioni ne determina le loro dimensioni ( so
 + 32 registri a 128bit per operazioni floating point e vettorizzate ( chiamati **V** per operazioni **SIMD** , se usiamo il nome **V** rappresentano operazioni su vettori di numeri, possiamo effettuare la somma 64bit di due numeri floating point contemporaneamente)
 + Il nome del registro determina la dimensione dell'operazione
 
-![Immagine 2023-04-04 083633.png](../../Resources/Immagine%202023-04-04%20083633.png)
+![[Immagine 2023-04-04 083633.png]]
 
 ### Registri Paricolari
 
@@ -64,7 +63,7 @@ Utilizzati per configurare la CPU o il sistema di memoria, non possono essere us
 
 ### Formato 
 
-![Immagine 2023-04-04 171039.png](../../Resources/Immagine%202023-04-04%20171039.png)
+![[Immagine 2023-04-04 171039.png]]
 
 Tutte le istruzioni sono a 32 bit : 
 + **Rn** : source 1
@@ -87,11 +86,11 @@ Tutte le istruzioni sono a 32 bit :
 
 **< shift >** :
 + **LSL**  : Logic shift left ( moltiplicazione per multipli di 2 ) ( può avvenire **overflow** )
-![Immagine 2023-04-04 180906.png](../../Resources/Immagine%202023-04-04%20180906.png)
+![[Immagine 2023-04-04 180906.png]]
 + **LSR** : Logic shift right ( divisione per multipli di 2 ) ( 0 sui bit più significativi, se considero numeri con segno posso perdere il segno )
-![Immagine 2023-04-04 180939.png](../../Resources/Immagine%202023-04-04%20180939.png)
+![[Immagine 2023-04-04 180939.png]]
 + **ASR** : Arithmetic shift right ( inserisce 0 o 1 a seconda del segno )
-![Immagine 2023-04-04 181242.png](../../Resources/Immagine%202023-04-04%20181242.png)
+![[Immagine 2023-04-04 181242.png]]
 + **ROR** : "rotazioni"
 + **RRX** : "rotazioni"
 
@@ -124,7 +123,7 @@ Se utilizzo un operatore immediato in operazioni aritmetiche l'istruzione viene 
 **SXT{B , H , W}** : sign extend ( estende il segno di un numero )
 **UXT{B , H , W}** : zero extend ( estende lo 0 )
 
-![Immagine 2023-04-04 183120.png](../../Resources/Immagine%202023-04-04%20183120.png)
+![[Immagine 2023-04-04 183120.png]]
 
 **ADR** x(d) , label : Carica l'indirizzo di label nel registro x(d), la label deve trovarsi entro  $\pm$ 1Mb dal **PC** , perchè l'indirizzo è specificato come offset del **PC**
 
@@ -159,7 +158,7 @@ Salta all'indirizzo label sulla base di una **conditional mnemonics** = ( COND )
 + **B.LT label** , if less than
 
 Full list:
-![Immagine 2023-04-07 175301.png](../../Resources/Immagine%202023-04-07%20175301.png)
+![[Immagine 2023-04-07 175301.png]]
 
 Risultato dipende dai condition codes della CPU ( registro **APSR** )
 
@@ -247,8 +246,8 @@ Per la store
 + **W** : carico i 4 byte meno significativi di **( reg )** in **$[$addr$]$** ( utile solo su address x(n) )
 
 Pre la load
-+ **Unisgned load** : **LDR( size ) ...** zero extends the bytes loaded![Immagine 2023-04-07 190231.png](../../Resources/Immagine%202023-04-07%20190231.png)
-+ **Signed load** : **LDRS( size ) ...** sign extends the bytes loaded![Immagine 2023-04-07 190334.png](../../Resources/Immagine%202023-04-07%20190334.png)
++ **Unisgned load** : **LDR( size ) ...** zero extends the bytes loaded![[Immagine 2023-04-07 190231.png]]
++ **Signed load** : **LDRS( size ) ...** sign extends the bytes loaded![[Immagine 2023-04-07 190334.png]]
 
 ##### $[$addr$]$
 
@@ -257,23 +256,23 @@ Pre la load
 ###### Base register
 Utiliziammo un registro che contine l'indirizzo da utilizzare
 
-![Immagine 2023-04-07 191126.png](../../Resources/Immagine%202023-04-07%20191126.png)
+![[Immagine 2023-04-07 191126.png]]
 
 ###### Offset
 L'indirizzo da utilizzare viene ottenuto sommando un immediato ( offset ) al valore contenuto in un registro ( utile negli array ) ( **LDR** in questo caso sinonimo di **LDUR** **Load unscaled-offset register** )
 
-![Immagine 2023-04-07 191338.png](../../Resources/Immagine%202023-04-07%20191338.png)
+![[Immagine 2023-04-07 191338.png]]
 
 ###### Pre-index
 Offset viene sommato e scritto nel registro contenente l'indrizzo da utilizzare prima di accedere alla memoria
 
-![Immagine 2023-04-07 191506.png](../../Resources/Immagine%202023-04-07%20191506.png)
+![[Immagine 2023-04-07 191506.png]]
 
 ###### Post-index
 
 Si accede alla memoria all'indirizzo indicato dal registro ( come in base register ), dopo il caricamento l'offset è aggiunto al registro
 
-![Immagine 2023-04-07 191631.png](../../Resources/Immagine%202023-04-07%20191631.png)
+![[Immagine 2023-04-07 191631.png]]
 
 #### Syscall
 

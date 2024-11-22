@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esame/Pointers.md","permalink":"/1 anno/Programmazione e Laboratorio/Esame/Pointers/","PassFrontmatter":true}
+publish: true
 ---
-
 ### Lvalue , Rvalue
 
 Un Lvaue è un valore che può essere messo sia a destra che a sinistra di un'espressione

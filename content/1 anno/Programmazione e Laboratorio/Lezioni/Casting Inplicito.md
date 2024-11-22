@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Casting Inplicito.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Casting Inplicito/","PassFrontmatter":true}
+publish: true
 ---
-
 
 Ogni qual volta avviene un assegnamento tra 2 tipi diversi C++ svolge un casting (in C++ tutti i tipi sono compatibili) 
 Esempio:  

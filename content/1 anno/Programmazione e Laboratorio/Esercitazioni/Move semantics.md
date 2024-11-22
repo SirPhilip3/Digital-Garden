@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esercitazioni/Move semantics.md","permalink":"/1 anno/Programmazione e Laboratorio/Esercitazioni/Move semantics/","PassFrontmatter":true}
+publish: true
 ---
-
 
 Each time a function returns something it returns a temporary object that it's copied when assigned to another value in `main` 
 
@@ -31,7 +30,7 @@ The copy `x = plus_one(x)` is very slow because :
 
 To prevent this copy we can just copy the pointer of the temporary object and use it  in `x`
 
-![Immagine 2023-04-21 151009.png](../../../Resources/Immagine%202023-04-21%20151009.png)
+![[Immagine 2023-04-21 151009.png]]
 
 Stealing memory is only fine if we steal it from a **temporary object** ( something that is going to disappeare forever )
 

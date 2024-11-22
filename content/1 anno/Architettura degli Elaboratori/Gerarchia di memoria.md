@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Architettura degli Elaboratori/Gerarchia di memoria.md","permalink":"/1 anno/Architettura degli Elaboratori/Gerarchia di memoria/","PassFrontmatter":true}
+publish: true
 ---
-
 ## Tipologie di memoria
 
 ### SRAM ( Static Random Access Memory )
@@ -70,7 +69,7 @@ Caratteristiche:
 Le memorie più veloci utilizzate vicino alla CPU, le memorie più lente ma più capienti utilizzate a cascata per memorizzare i dati che vengono utilizzati meno di frequente.
 **Obiettivo**: velocità di accesso della memoria del livello più vicino alla CPU con la capienza di quella al livello più distante 
 
-![Immagine 2023-03-16 173316.png](../../Resources/Immagine%202023-03-16%20173316.png)
+![[Immagine 2023-03-16 173316.png]]
 
 ### Principio di località
 
@@ -122,7 +121,7 @@ equivale a fare lo shift verso sinistra di n bit
 
 Esempio:
 
-![Immagine 2023-03-16 174119.png](../../Resources/Immagine%202023-03-16%20174119.png)
+![[Immagine 2023-03-16 174119.png]]
 
 cache da 8 blocchi (log$_2$ 8=3)
 address: 00101
@@ -130,7 +129,7 @@ cache address: 00101%8 -> 101
 
 Indirizzamento con più di 1B per blocco
 
-![Immagine 2023-03-16 174223.jpg](../../Resources/Immagine%202023-03-16%20174223.jpg)
+![[Immagine 2023-03-16 174223.jpg]]
 
 + Calcolo block address = address / block size
 + Calcolo **block index** = block address % # **cache blocks**
@@ -153,7 +152,7 @@ Aumento dimensioni blocco:
 + aumento del **miss penalty**
 + aumentando le dimensioni del blocco, esso non viene utilizzato completamente: spreco nell'utilizzo della cache, genera inoltre conflitti con altri blocchi utilizzati
 
-![Immagine 2023-03-16 181632.png](../../Resources/Immagine%202023-03-16%20181632.png)
+![[Immagine 2023-03-16 181632.png]]
 
 Il **block size** ideale risulta nel mezzo
 
@@ -295,7 +294,7 @@ Soluzione:
 
 #### 2-way set associative
 
-![Immagine 2023-03-21 190447.png](../../Resources/Immagine%202023-03-21%20190447.png)
+![[Immagine 2023-03-21 190447.png]]
 
 Cache organizzata in insiemi da 2 blocchi ( vie ) ciascuno:
 + La scelta dell'insieme avviene con una funzione di mapping
@@ -322,21 +321,21 @@ Block address = [0,8,0,6,8]
 
 Cache address = [0%4=0; 8%4=0; 0%4=0; 6%4=2; 8%4=0]
 
-![Immagine 2023-03-22 083005.png|630](../../Resources/Immagine%202023-03-22%20083005.png)
+![[Immagine 2023-03-22 083005.png|630]]
 
 **Cache 2-way (LRU)**
 
 Cache address = [0%2=0; 8%2=0; 0%2=0; 6%2=0; 8%2=0] (tutti in insime 0)
 
-![Immagine 2023-03-22 083506.png](../../Resources/Immagine%202023-03-22%20083506.png)
+![[Immagine 2023-03-22 083506.png]]
 
 **Fully associativie**
 
-![Immagine 2023-03-22 083626.png|630](../../Resources/Immagine%202023-03-22%20083626.png)
+![[Immagine 2023-03-22 083626.png|630]]
 
 Benefici maggiori per cache di piccole dimensioni poichè nel caso diretto avremo un miss rate molto alto
 
-![Immagine 2023-03-22 083848.png](../../Resources/Immagine%202023-03-22%20083848.png) 
+![[Immagine 2023-03-22 083848.png]] 
 
 
 

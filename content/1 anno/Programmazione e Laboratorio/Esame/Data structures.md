@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Esame/Data structures.md","permalink":"/1 anno/Programmazione e Laboratorio/Esame/Data structures/","PassFrontmatter":true}
+publish: true
 ---
-
 ## Singly linked list
 
 è utile quando si devono fare molte aggiunte o eliminazioni dalla testa ( se è solo con il pointer alla testa )  poichè se li facessimo con i vector o gli array bisognerrebbe riallocare dello spazio in memoria in qunato negli array per inserire in testa bisogna spostare di 1 elemento a destra tutto il resto dell'array, invece nelle liste basta che aggiungi un nuovo nodo all'inizio modificando dei puntatori
@@ -10,7 +9,7 @@ Il problema principale delle liste è spostarsi tra gli elementi infatti ogni vo
 
 Il problema può essere parzialmente risolto aggiungendo un pointer all'elemento precedente di ogni nodo e anche aggiungendo un pointer alla tail , così se devo inserire un elemento in coda non devo attraversare tutta la lista
 
-![structure-of-a-singly-linked-list.png](../../../Resources/structure-of-a-singly-linked-list.png)
+![[structure-of-a-singly-linked-list.png]]
 
 ### Example class :
 
@@ -140,7 +139,7 @@ list_int::list_int(const list_int& s){>
 
 ### Append
 
-![Single_Link_List_Insert_Append.png](../../../Resources/Single_Link_List_Insert_Append.png)
+![[Single_Link_List_Insert_Append.png]]
 
 senza pimpl
 ```c++
@@ -200,7 +199,7 @@ con pimpl
 
 devo aggiungere un elemento all'inizo
 
-![image006.gif](../../../Resources/image006.gif)
+![[image006.gif]]
 
 senza pimpl
 ```c++
@@ -221,7 +220,7 @@ con pimpl
 
 ### Inserisci a index
 
-![Single_Link_List_Insert_Append2.png](../../../Resources/Single_Link_List_Insert_Append2.png)
+![[Single_Link_List_Insert_Append2.png]]
 
 Qui ci sono dei problemi poichè dobbiamo chiederci se vogliamo inserire l'elemento prima o dopo l'elemento trovato o l'index, questo cambia l'implementazione dell'insert
 
@@ -434,7 +433,7 @@ Stessi rispetto alla singly linked list
 
 ### Append
 
-![DLL_add_end123.png](../../../Resources/DLL_add_end123.png)
+![[DLL_add_end123.png]]
 
 ```c++
 void listDL::append(int e){
@@ -455,7 +454,7 @@ void listDL::append(int e){
 
 ### Prepend
 
-![DLL_add_front13.png](../../../Resources/DLL_add_front13.png)
+![[DLL_add_front13.png]]
 
 ```c++
 void listDL::prepend(int e){
@@ -475,7 +474,7 @@ void listDL::prepend(int e){
 
 ### Inserimento
 
-![DLL_add_middle1.png](../../../Resources/DLL_add_middle1.png)
+![[DLL_add_middle1.png]]
 
 Inserisci prima di un elemento
 
@@ -748,7 +747,7 @@ bool ha_cappio(ListCirc l){
 
 Questo metodo comporta una complessità molto alta un metodo alterantivo è il seguente
 
-![Image-4-1-522x1024.png](../../../Resources/Image-4-1-522x1024.png)
+![[Image-4-1-522x1024.png]]
 
 ## Lista con vector
 

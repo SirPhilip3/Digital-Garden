@@ -1,7 +1,6 @@
 ---
-{"publish":true,"path":"1 anno/Programmazione e Laboratorio/Lezioni/Strutture di controllo.md","permalink":"/1 anno/Programmazione e Laboratorio/Lezioni/Strutture di controllo/","PassFrontmatter":true}
+publish: true
 ---
-
 
 ## For/While
 
@@ -11,7 +10,7 @@ while(cond) == for(; cond; )
 ```
 
 In C++
-Il ciclo for consiste di tre clausole: l’inizializzazione, la condizione di permanenza, l’espressione di iterazione. Nell’espressione di iterazione tipicamente modifichiamo il valore delle [[1 anno/Programmazione e Laboratorio/Lezioni/Variabili\|Variabili]] che compaiono nella condizione. L’uso appropriato del ciclo for prevede che nessuna delle [[1 anno/Programmazione e Laboratorio/Lezioni/Variabili\|Variabili]] che compaiono nella condizione siano alterate all’interno del corpo del ciclo. In altre parole, le iterazioni devono essere governate soltanto dalle tre clausole che compongono l’intestazione del ciclo. Il for inoltre termina in tutti i casi, ciò è garantito dall'intestazione del ciclo
+Il ciclo for consiste di tre clausole: l’inizializzazione, la condizione di permanenza, l’espressione di iterazione. Nell’espressione di iterazione tipicamente modifichiamo il valore delle [[Variabili]] che compaiono nella condizione. L’uso appropriato del ciclo for prevede che nessuna delle [[Variabili]] che compaiono nella condizione siano alterate all’interno del corpo del ciclo. In altre parole, le iterazioni devono essere governate soltanto dalle tre clausole che compongono l’intestazione del ciclo. Il for inoltre termina in tutti i casi, ciò è garantito dall'intestazione del ciclo
 
 non viene utilizzato break, continue, goto poichè verrà utilizzzato il paradigma della [Structured programming](https://en.wikipedia.org/wiki/Structured_programming) , nella quale non vengono utilizatti (per chiarità del codice)
 
